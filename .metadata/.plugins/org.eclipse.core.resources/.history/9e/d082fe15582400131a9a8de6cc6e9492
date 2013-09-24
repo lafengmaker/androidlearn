@@ -1,0 +1,15 @@
+package com.lafeng.activity_01;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class ActivityOther extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		TextView textView=(TextView)findViewById(R.id.retult);
+		
+		super.onCreate(savedInstanceState);
+	}
+}

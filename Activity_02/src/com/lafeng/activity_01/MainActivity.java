@@ -14,12 +14,12 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.linearlayoutmain);
         TextView textView=(TextView)findViewById(R.id.mytestView);
         Button button=(Button)findViewById(R.id.myButton);
         button.setText(R.string.buttontext);
         button.setOnClickListener(new myButtonListener());
+        super.onCreate(savedInstanceState);
     }
 
 
@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View arg0) {
 			Intent intent =new Intent();
+			intent.putExtra("myData", "这个事我传递过来的内容，修改了原来的页面");
 			intent.setClass(MainActivity.this, ActivityOther.class);
 			MainActivity.this.startActivity(intent);
 		}

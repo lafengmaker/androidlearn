@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">计算器</string>
+    <string name="action_settings">Settings</string>
+	<string name="chenyi">乘以</string>
+	<string name="buttonjisuan">计算</string>
+	<string name="resultlabeltext">结果：</string>
+</resources>
